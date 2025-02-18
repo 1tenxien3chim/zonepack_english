@@ -21155,9 +21155,11 @@ button.scroll-top {
     cursor: pointer;
   }
 }
-@media (min-width: 1199px) {
-  .ctn-fix {
-    padding-left: 6%;
-    padding-right: 6%;
+@media (min-width: 1200px) {
+  .container {
+    width: 1400px;
   }
+}
+.search-language > a i {
+  font-family: "Font Awesome 6 Free";
 }/*# sourceMappingURL=main.css.map */

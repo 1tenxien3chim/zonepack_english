@@ -94,6 +94,12 @@ $(".has-dropdown-1 .menu-link").click(function () {
     $(".product-dropdown").toggleClass("active");
 });
 
+// click language header
+$( ".text-language p" ).on( "click", function() {
+    $( ".text-language ul" ).toggle( "slow" );
+});
+
+
 new WOW().init();
 
 $(".slider_partners").owlCarousel({
@@ -120,3 +126,4 @@ $(".slider_partners").owlCarousel({
     //animateIn: ['fadeIn', 'zoomIn'], // default: false
     center: false,
 });
+
