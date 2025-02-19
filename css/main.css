@@ -21157,9 +21157,25 @@ button.scroll-top {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1400px;
+    max-width: 1440px;
+    width: 96%;
   }
 }
-.search-language > a i {
-  font-family: "Font Awesome 6 Free";
+.menu_header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  padding: 10px 0px;
+}
+.menu_header .menu_main .nav-menu {
+  float: right;
+}
+.menu_header .menu_main .nav-menu > li a {
+  line-height: 80px;
+}
+.menu_header .search-language {
+  display: flex;
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=main.css.map */

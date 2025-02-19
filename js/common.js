@@ -102,17 +102,17 @@ $( ".text-language p" ).on( "click", function() {
 
 new WOW().init();
 
-$(".slider_partners").owlCarousel({
-    items: 5,
+$(".slider").owlCarousel({
+    items: 1,
     responsive: {
-        1200: { item: 5, },// breakpoint from 1200 up
-        992: { items: 3, },
-        768: { items: 2, },
-        480: { items: 2, },
+        1200: { item: 1, },// breakpoint from 1200 up
+        992: { items: 1, },
+        768: { items: 1, },
+        480: { items: 1, },
         0: { items: 1, }
     },
     rewind: false,
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: true,
     autoplayTimeout: 5000,
     smartSpeed: 5000, //slide speed smooth
