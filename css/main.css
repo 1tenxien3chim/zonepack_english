@@ -21222,14 +21222,11 @@ button.scroll-top {
 .menu_header .search-language .text-language .icon-text-language .icon-language svg {
   margin-left: 7px;
   transform: rotate(0deg);
-  transition: allease 0.3s;
-}
-.menu_header .search-language .text-language .icon-text-language .icon-language:hover {
-  transition: allease 0.3s;
+  transition: all ease 0.3s;
 }
 .menu_header .search-language .text-language .icon-text-language .icon-language:hover svg {
   transform: rotate(-180deg);
-  transition: allease 0.3s;
+  transition: all ease 0.3s;
 }
 .menu_header .search-language .text-language .icon-text-language ul {
   display: none;
