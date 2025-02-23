@@ -9,12 +9,13 @@
     box-sizing: border-box;
 }
 :root{
-    --color-primary:#06245b;
-    --color-heading:#333333;
+    --color-primary:#0f3f93;
+    --color-heading:#191919;
     --color-text-menu:#212934;
-    --color-text:#747474;
-    --color-text-body:#000;
+    --color-text:#333;
+    --color-text-body:#999;
     --color-border:#e2e2e2;
+    --text-footer:#c1d2e8;
     --color-transparent:transparent;
     --bg-body:#fff;
     --bg-content:#f5f5f5;
@@ -67,7 +68,7 @@ a, span, p , button {
 } 
 body {
     font-family:var(--font-primary);
-    background: #fff;
+    background:var(--bg-body);
     font-size: 15px;
     font-weight:400;
     line-height: 22px;
@@ -284,10 +285,10 @@ strong{
     text-transform: uppercase;
 } 
 .nav-menu > .menu-item.is-active > .menu-link {
-    color:var(--color-primary);
+    color:var(--bg-body);
 } 
 .nav-menu > .menu-item:hover > .menu-link {
-    color:var(--color-primary);
+    color:var(--bg-body);
 }
 .nav-menu > .menu-item.is-active.has-dropdown:after,
 .nav-menu > .menu-item:hover.has-dropdown:after {
@@ -304,8 +305,8 @@ strong{
     text-align: left;
     display: block;
     font-size: 15px;
-    color:var(--color-text-menu);
-    font-weight: 600;
+    color:var(--bg-body);
+    font-weight: 400;
     text-transform: capitalize;
 } 
 .has-dropdown > .menu-link {
@@ -509,7 +510,7 @@ strong{
     }
     .nav-menu > .menu-item.is-active > .menu-link,
     .nav-menu > .menu-item:hover > .menu-link {
-        color: var(--color-primary); /*color khi hover và active menu pc*/
+        color: var(--bg-body); /*color khi hover và active menu pc*/
     }
 
     .nav-dropdown > .menu-item {

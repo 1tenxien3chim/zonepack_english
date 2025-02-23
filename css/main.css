@@ -20402,12 +20402,13 @@ readers do not read off random characters that represent icons */
 }
 
 :root {
-  --color-primary:#06245b;
-  --color-heading:#333333;
+  --color-primary:#0f3f93;
+  --color-heading:#191919;
   --color-text-menu:#212934;
-  --color-text:#747474;
-  --color-text-body:#000;
+  --color-text:#333;
+  --color-text-body:#999;
   --color-border:#e2e2e2;
+  --text-footer:#c1d2e8;
   --color-transparent:transparent;
   --bg-body:#fff;
   --bg-content:#f5f5f5;
@@ -20461,7 +20462,7 @@ a, span, p, button {
 
 body {
   font-family: var(--font-primary);
-  background: #fff;
+  background: var(--bg-body);
   font-size: 15px;
   font-weight: 400;
   line-height: 22px;
@@ -20693,11 +20694,11 @@ strong {
 }
 
 .nav-menu > .menu-item.is-active > .menu-link {
-  color: var(--color-primary);
+  color: var(--bg-body);
 }
 
 .nav-menu > .menu-item:hover > .menu-link {
-  color: var(--color-primary);
+  color: var(--bg-body);
 }
 
 .nav-menu > .menu-item.is-active.has-dropdown:after,
@@ -20714,8 +20715,8 @@ strong {
   text-align: left;
   display: block;
   font-size: 15px;
-  color: var(--color-text-menu);
-  font-weight: 600;
+  color: var(--bg-body);
+  font-weight: 400;
   text-transform: capitalize;
 }
 
@@ -20890,7 +20891,7 @@ strong {
   }
   .nav-menu > .menu-item.is-active > .menu-link,
   .nav-menu > .menu-item:hover > .menu-link {
-    color: var(--color-primary); /*color khi hover và active menu pc*/
+    color: var(--bg-body); /*color khi hover và active menu pc*/
   }
   .nav-dropdown > .menu-item {
     padding: 0;
@@ -21169,13 +21170,77 @@ button.scroll-top {
   z-index: 100;
   padding: 10px 0px;
 }
+.menu_header .logo_pc {
+  line-height: 80px;
+  display: inline-block;
+}
 .menu_header .menu_main .nav-menu {
   float: right;
 }
-.menu_header .menu_main .nav-menu > li a {
+.menu_header .menu_main .nav-menu > li > a {
   line-height: 80px;
 }
 .menu_header .search-language {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.menu_header .search-language .search-icon {
+  height: 80px;
+  padding-top: 23px;
+}
+.menu_header .search-language .search-icon a {
+  display: inline-block;
+  padding: 8px;
+  color: var(--bg-body);
+  margin-right: 10px;
+}
+.menu_header .search-language .search-icon a .icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.menu_header .search-language .text-language {
+  height: 80px;
+  padding-top: 20px;
+}
+.menu_header .search-language .text-language .icon-text-language {
+  background-color: var(--bg-body);
+  border-radius: 20px;
+  padding: 7px 15px 7px 20px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menu_header .search-language .text-language .icon-text-language .icon-language {
+  display: flex;
+  color: var(--color-text-menu);
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 16px;
+}
+.menu_header .search-language .text-language .icon-text-language .icon-language svg {
+  margin-left: 7px;
+  transform: rotate(0deg);
+  transition: allease 0.3s;
+}
+.menu_header .search-language .text-language .icon-text-language .icon-language:hover {
+  transition: allease 0.3s;
+}
+.menu_header .search-language .text-language .icon-text-language .icon-language:hover svg {
+  transform: rotate(-180deg);
+  transition: allease 0.3s;
+}
+.menu_header .search-language .text-language .icon-text-language ul {
+  display: none;
+  margin-top: 5px;
+}
+.menu_header .search-language .text-language .icon-text-language ul li {
+  list-style: none;
+  line-height: 25px;
+}
+.menu_header .search-language .text-language .icon-text-language ul li a {
+  color: var(--text-footer);
+  font-weight: 300;
+  font-size: 15px;
 }/*# sourceMappingURL=main.css.map */
