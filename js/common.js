@@ -98,6 +98,9 @@ $(".has-dropdown-1 .menu-link").click(function () {
 $( ".text-language p" ).on( "click", function() {
     $( ".text-language ul" ).toggle( "slow" );
 });
+$( ".text-language p" ).on( "click", function() {
+    $( ".text-language ul" ).toggle( "slow" );
+});
 
 
 new WOW().init();

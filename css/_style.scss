@@ -4,13 +4,16 @@
         max-width: 1440px;
         width: 96%;
     }
-}
+    .nav-menu > .menu-item { 
+        padding: 0px 25px;
+    }
+} 
 .menu_header{
     position: fixed;
     width: 100%;
     top: 0px;
     left: 0px;
-    z-index: 100;
+    z-index: 10;
     padding: 10px 0px;
     .logo_pc{
         line-height: 80px;
@@ -88,5 +91,48 @@
                 } 
             }  
         }
+    } 
+    .logo_mb_2{
+        padding: 19px 0px 20px 15px;
+        a{ 
+            img{
+              max-height: 35px;   
+            }
+        } 
+    } 
+    @media (max-width:991px) {
+        padding:0px;
+        .menu_main{
+            .nav-menu{
+                float: none;
+                >li{
+                    >a{
+                        line-height: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+.language_mb{
+    position: fixed;
+    top: 27px;
+    right:15px;
+    display: inline-block;
+    svg{
+        width: 18px;
+        height: 18px;
+    }
+}
+.search_mb{
+    position: fixed;
+    top: 27px;
+    right: 50px;
+    display: inline-block;
+    color: var(--bg-body);
+    svg{
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
     }
 }

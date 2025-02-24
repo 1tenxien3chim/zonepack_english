@@ -212,9 +212,9 @@ strong{
     height: 50px;
     display: inline-block;
     position: fixed;
-    right: 15px;
+    right:80px;
     top: 10px;
-    z-index: 99;
+    z-index: 100;
     outline: none;
     line-height: 1; 
     padding: 2px;
@@ -232,7 +232,7 @@ strong{
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
     transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-color: #000; /*color btn menu mobile*/
+    background-color:var(--bg-body); /*color btn menu mobile*/
 }
 .nav-toggle.is-active span {
     background: transparent;
@@ -247,7 +247,7 @@ strong{
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #000;
+    background-color: var(--bg-body);
     -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -292,7 +292,7 @@ strong{
 }
 .nav-menu > .menu-item.is-active.has-dropdown:after,
 .nav-menu > .menu-item:hover.has-dropdown:after {
-    color: var(--color-heading);
+    color: var(--bg-body);
 }
 
 .nav-dropdown > .menu-item {
@@ -328,6 +328,7 @@ strong{
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    color: var(--bg-body);
 }
 .has-dropdown.is-active:after {
     -webkit-transform: rotate(90deg);
@@ -493,7 +494,7 @@ strong{
     .nav-menu > .menu-item { 
         float: left;
         border-top: 0px; 
-        padding:0px 25px;
+        padding:0px 10px;
     }
     .nav-menu > .menu-item:nth-child(2){
         padding-left: 0px;
@@ -530,9 +531,8 @@ strong{
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--bg-body);
-    z-index: 9;
-    padding: 1px 5px;
+    background: var(--color-transparent);
+    z-index: 10; 
     height:75px;
     box-shadow: 0 0 3px 2px #ccc;
 }
@@ -540,18 +540,19 @@ strong{
     display: flex;   
     max-width: 100%;
     width: 100%; 
-    margin-left: 15px;
+    padding-left: 15px;
     @media (max-width:767px){ 
         margin-left:0px;
     }
 }
 .img_logo_mb {
-    max-height: 55px;
+    max-height:45px;
     max-width: 100%;
     height: auto;
-    margin-top: 5px;
+    margin-top: 13px;
     @media (max-width:575px){
-        width: 180px; 
+        width: 155px;
+        margin-top: 20px;
     } 
 }  
 .menu_header {
@@ -768,6 +769,7 @@ button.scroll-top {
         -ms-transform: translateX(-100%);
         transform: translateX(-100%);
         -webkit-overflow-scrolling: touch;
+        background-color: var(--color-primary); 
     }
     .has-dropdown {
         position: relative;
