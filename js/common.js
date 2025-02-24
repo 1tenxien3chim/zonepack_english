@@ -98,8 +98,8 @@ $(".has-dropdown-1 .menu-link").click(function () {
 $( ".text-language p" ).on( "click", function() {
     $( ".text-language ul" ).toggle( "slow" );
 });
-$( ".text-language p" ).on( "click", function() {
-    $( ".text-language ul" ).toggle( "slow" );
+$( ".language_mb" ).on( "click", function() {
+    $( ".language_mb ul" ).toggle( "slow" );
 });
 
 

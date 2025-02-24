@@ -20899,7 +20899,7 @@ strong {
     background: var(--bg-body);
   }
   .nav-dropdown > .menu-item > .menu-link {
-    color: #0d0d0d;
+    color: var(--color-text-menu);
   }
   .nav-dropdown > .menu-item:hover > .menu-link {
     color: var(--color-text-menu);
@@ -21143,7 +21143,7 @@ button.scroll-top {
     overflow-y: auto;
     visibility: hidden;
     width: 300px;
-    max-width: 70%;
+    max-width: 60%;
     height: 100%;
     min-height: 100%;
     margin: 0;
@@ -21269,10 +21269,34 @@ button.scroll-top {
   top: 27px;
   right: 15px;
   display: inline-block;
+  width: 18px;
+  height: 18px;
 }
 .language_mb svg {
   width: 18px;
   height: 18px;
+}
+.language_mb ul {
+  position: absolute;
+  width: 120px;
+  right: 0px;
+  background-color: var(--bg-body);
+  border-radius: 5px;
+  display: none;
+}
+.language_mb ul li {
+  list-style: none;
+  line-height: 25px;
+  padding: 7px;
+}
+.language_mb ul li:first-child {
+  padding-bottom: 0px;
+}
+.language_mb ul li:last-child {
+  padding-top: 0px;
+}
+.language_mb ul li a {
+  font-size: 15px;
 }
 
 .search_mb {
@@ -21286,4 +21310,68 @@ button.scroll-top {
   width: 18px;
   height: 18px;
   fill: currentColor;
+}
+
+.slider .owl-dots {
+  bottom: 15px;
+}
+.slider .owl-dots .owl-dot span {
+  margin: 5px;
+  opacity: 0.6;
+  background-color: #000;
+}
+.slider .owl-dots .owl-dot.active span {
+  background-color: var(--color-primary);
+}
+@media (max-width: 767px) {
+  .slider .item a img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 50vh;
+  }
+}
+
+#products {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+#products .heading-home {
+  color: var(--color-heading);
+  font-size: 38px;
+  text-align: center;
+  font-family: Arial;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+#products .heading-home::after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 148px;
+  height: 1px;
+  background-color: var(--color-text-body);
+}
+#products .heading-home::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 50px;
+  background-color: var(--color-primary);
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+}
+#products .dsc-home {
+  color: var(--color-text-body);
+  font-size: 16px;
+  text-align: center;
+  font-family: Arial;
+  margin-top: 12px;
 }/*# sourceMappingURL=main.css.map */
