@@ -31,11 +31,7 @@ $(function () {
     // Nav dropdown toggle
     navDropdownToggle.on('click', function () {
         var $this = $(this);
-        $this.toggleClass('is-active').siblings().removeClass('is-active');
-        // if(!$(this).children('ul').is(":visible"))
-        // {
-        //   $(this).children('ul').slideDown();
-        // }
+        $this.toggleClass('is-active').siblings().removeClass('is-active'); 
         if ($this.children('ul').hasClass('open-nav')) {
             $this.children('ul').removeClass('open-nav');
             $this.children('ul').slideUp(350);
@@ -102,6 +98,19 @@ $( ".language_mb" ).on( "click", function() {
     $( ".language_mb ul" ).toggle( "slow" );
 });
 
+// count number 
+
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 3000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
 
 new WOW().init();
 
