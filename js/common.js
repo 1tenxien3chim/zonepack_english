@@ -112,6 +112,23 @@ $('.count').each(function () {
     });
 });
 
+//  fixed header 
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 10) {
+      $(".menu_header").addClass("fixd-header");
+    } else {
+      $(".menu_header").removeClass("fixd-header");
+    }
+});
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $(".menu_mb").addClass("fixd-header-mobile");
+    } else {
+      $(".menu_mb").removeClass("fixd-header-mobile");
+    }
+});
+
+
 new WOW().init();
 
 $(".slider").owlCarousel({
@@ -138,4 +155,31 @@ $(".slider").owlCarousel({
     //animateIn: ['fadeIn', 'zoomIn'], // default: false
     center: false,
 });
+
+$(".slider-dt").owlCarousel({
+    items: 5,
+    responsive: {
+        1200: { item: 5, },// breakpoint from 1200 up
+        992: { items: 4, },
+        768: { items: 3, },
+        480: { items: 2, },
+        0: { items: 2, }
+    },
+    rewind: false,
+    autoplay: false,
+    autoplayHoverPause: true,
+    autoplayTimeout: 2000,
+    smartSpeed: 2000, //slide speed smooth
+    dots: false,
+    dotsEach: false,
+    loop: true,
+    nav: true,
+    navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+    margin: 25,
+    //animateOut: ['fadeOut', 'zoomOut'], // default: false
+    //animateIn: ['fadeIn', 'zoomIn'], // default: false
+    center: false,
+});
+
+
 
