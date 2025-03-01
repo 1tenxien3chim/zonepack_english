@@ -21708,7 +21708,6 @@ button.scroll-top {
   width: 100%;
   height: 100%;
   z-index: 3;
-  background: url(../img/cover_bg.png) center center no-repeat;
   background-size: cover;
 }
 
@@ -21922,4 +21921,11 @@ button.scroll-top {
   .copyright .right-f {
     text-align: left;
   }
+}
+
+#banner_top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=main.css.map */
