@@ -22047,4 +22047,41 @@ button.scroll-top {
 }
 .pages-link li a span {
   color: var(--color-text) !important;
+}
+
+#detail-news {
+  background-color: var(--bg-body);
+  padding: 40px 0px;
+}
+#detail-news .content-detail .head-detail_news {
+  display: flex;
+}
+#detail-news .content-detail .head-detail_news .date {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  min-width: 75px;
+  height: 75px;
+  background-color: var(--color-primary);
+}
+#detail-news .content-detail .head-detail_news .date .day {
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--bg-body);
+}
+#detail-news .content-detail .head-detail_news .date span {
+  font-size: 14px;
+  color: var(--bg-body);
+}
+#detail-news .content-detail img {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0px;
+}
+#detail-news .content-detail p {
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: unset;
 }/*# sourceMappingURL=main.css.map */
