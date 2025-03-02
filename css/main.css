@@ -22011,12 +22011,40 @@ button.scroll-top {
   background-color: rgb(245, 245, 245);
   padding: 60px 0px;
 }
+#content-news .item-news {
+  background-color: var(--bg-body);
+  margin-bottom: 25px;
+}
 #content-news .item-news .name-new_item {
   -webkit-line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  padding: 15px;
+  height: 85px;
 }
 #content-news .item-news .name-new_item a {
-  font-size: 18px;
+  font-size: 16px;
+  color: var(--color-text);
+  line-height: 1.8;
+  font-weight: 400;
+}
+#content-news .item-news .date-news_item {
+  padding: 0px 15px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#content-news .item-news .date-news_item a {
+  height: 20px;
+  width: 30px;
+  font-size: 16px;
+  color: var(--color-text);
+  text-align: right;
+}
+
+.pages-link li a {
+  color: var(--color-text) !important;
+}
+.pages-link li a span {
+  color: var(--color-text) !important;
 }/*# sourceMappingURL=main.css.map */
