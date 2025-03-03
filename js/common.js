@@ -181,5 +181,29 @@ $(".slider-dt").owlCarousel({
     center: false,
 });
 
+$(".slider-chungchi").owlCarousel({
+    items: 5,
+    responsive: {
+        1200: { item: 5, },// breakpoint from 1200 up
+        992: { items: 4, },
+        768: { items: 3, },
+        480: { items: 2, },
+        0: { items: 2, }
+    },
+    rewind: false,
+    autoplay: false,
+    autoplayHoverPause: true,
+    autoplayTimeout: 2000,
+    smartSpeed: 2000, //slide speed smooth
+    dots: false,
+    dotsEach: false,
+    loop: true,
+    nav: true,
+    navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+    margin: 25,
+    //animateOut: ['fadeOut', 'zoomOut'], // default: false
+    //animateIn: ['fadeIn', 'zoomIn'], // default: false
+    center: false,
+});
 
 

@@ -1,0 +1,10 @@
+.slider-chungchi{
+    .item {
+        img {
+            width: 100%;
+            border: 1px solid #ccc;
+            -o-object-fit: contain;
+            object-fit: contain; 
+        }
+    }
+}
