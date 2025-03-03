@@ -20419,6 +20419,7 @@ readers do not read off random characters that represent icons */
   --color_2: #18afb4;
   --color_3: #1c2033;
   --background-color_1: #fff;
+  --text-detail-news: #666;
 }
 
 html {
@@ -22049,14 +22050,24 @@ button.scroll-top {
   color: var(--color-text) !important;
 }
 
-#detail-news {
+.bg-news-detail {
   background-color: var(--bg-body);
-  padding: 40px 0px;
+  padding: 30px;
+  overflow: hidden;
 }
-#detail-news .content-detail .head-detail_news {
+@media (max-width: 991px) {
+  .bg-news-detail {
+    padding: 15px;
+  }
+}
+
+.content-detail .head-detail_news {
   display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+  padding-bottom: 25px;
+  margin-bottom: 30px;
 }
-#detail-news .content-detail .head-detail_news .date {
+.content-detail .head-detail_news .date {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -22065,23 +22076,70 @@ button.scroll-top {
   min-width: 75px;
   height: 75px;
   background-color: var(--color-primary);
+  margin-right: 25px;
 }
-#detail-news .content-detail .head-detail_news .date .day {
+@media (max-width: 767px) {
+  .content-detail .head-detail_news .date {
+    display: none;
+  }
+}
+.content-detail .head-detail_news .date .day {
   font-size: 34px;
   font-weight: 600;
   color: var(--bg-body);
+  display: block;
+  margin-bottom: 5px;
 }
-#detail-news .content-detail .head-detail_news .date span {
+.content-detail .head-detail_news .date span {
   font-size: 14px;
   color: var(--bg-body);
 }
-#detail-news .content-detail img {
+.content-detail .head-detail_news .date span:last-child {
+  display: block;
+  margin-bottom: -5px;
+}
+.content-detail .head-detail_news h1 {
+  font-size: 22px;
+  line-height: 1.5;
+}
+.content-detail img {
   max-width: 100%;
   height: auto;
   margin: 15px 0px;
 }
-#detail-news .content-detail p {
+.content-detail p {
   font-size: 16px;
   color: var(--color-text);
-  line-height: unset;
+  line-height: 30px;
+  text-align: justify;
+  color: var(--text-detail-news);
+}
+
+.news-sidebar {
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.news-sidebar li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+.news-sidebar li h3 a {
+  font-size: 16px;
+  color: #444;
+  line-height: 24px;
+}
+.news-sidebar li p {
+  margin-top: 10px;
+}
+.news-sidebar li:last-child {
+  margin-bottom: 0px;
+}
+@media (max-width: 767px) {
+  .news-sidebar {
+    margin-top: 30px;
+    padding: 15px;
+  }
+  .news-sidebar li {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
