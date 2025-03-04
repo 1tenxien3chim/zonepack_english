@@ -112,6 +112,10 @@
                     }
                 }
                 .text-contact{
+                    max-width: 475px;
+                    @media (max-width:767px) {
+                        max-width: inherit;
+                    }
                     span{
                         font-size: 16px;
                         color: #808080;
@@ -124,7 +128,102 @@
                         font-weight: bold;
                     }
                 }
+                @media (max-width:767px) {
+                    display: block;
+                    .icon{
+                        margin-bottom: 20px;
+                    }
+                }
             }
+        }
+    }
+    .right-contact{
+        background-image:url(../img/bg-form-contact-uss.jpg) ;
+        background-repeat: no-repeat;
+        background-position: center right;
+        .item-contact{
+            max-width: 628px; 
+            background: rgba(255, 255, 255, 0.7);
+            margin-top: 60px;
+            background-color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 60px;
+            form{
+                .contact{  
+                    width: 84%; 
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    h3{
+                        font-size: 36px;
+                        color: #343434;
+                    }
+                    p{
+                        margin-top: 20px;
+                        font-size: 14px;
+                        color: #6e6e6e;
+                    }
+                    input{
+                        height:50px;
+                        border-radius: 4px;
+                        background: #e7eef6;
+                    }
+                    textarea{
+                        border-radius: 4px;
+                        background: #e7eef6;
+                    }
+                    button{
+                        width: 100%;
+                        height: 50px;
+                        border-radius: 4px;
+                        border: none;
+                        background-color: var(--color-primary);
+                        color: var(--bg-body);
+                        &:hover{
+                            background-color: rgba(59, 59, 59, 1);
+                        }
+                    }
+                }
+            }
+        }  
+    }
+    .list-contact{
+        margin-top: 50px;
+        padding-top: 50px;
+        border-top: 1px solid rgba(204, 204, 204, 1);
+        display: flex;
+        li{
+            list-style: none;
+            padding: 0px 40px;
+            width: 33.3333%;
+            border-right: 1px solid rgba(204, 204, 204, 1);
+            &:first-child{
+                padding-left: 0px;
+            }
+            &:last-child{
+                padding-right: 0px;
+                border: none;
+            }
+            h4{
+                font-size: 18px;
+                color:var(--color-text);
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 14px;
+                color: #808080;
+                line-height: 27px;
+            } 
+        }
+        @media (max-width:767px) {
+            display:block;
+            li{
+                width: 100%;
+                border: none;
+                margin-bottom: 25px;
+                padding: 0px;
+            }
+            
         }
     }
 }

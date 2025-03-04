@@ -22315,6 +22315,14 @@ button.scroll-top {
 #content-contact .left-contact .address-contact li .icon i {
   font-size: 30px;
 }
+#content-contact .left-contact .address-contact li .text-contact {
+  max-width: 475px;
+}
+@media (max-width: 767px) {
+  #content-contact .left-contact .address-contact li .text-contact {
+    max-width: inherit;
+  }
+}
 #content-contact .left-contact .address-contact li .text-contact span {
   font-size: 16px;
   color: #808080;
@@ -22325,4 +22333,100 @@ button.scroll-top {
   font-size: 18px;
   color: #111;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  #content-contact .left-contact .address-contact li {
+    display: block;
+  }
+  #content-contact .left-contact .address-contact li .icon {
+    margin-bottom: 20px;
+  }
+}
+#content-contact .right-contact {
+  background-image: url(../img/bg-form-contact-uss.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+#content-contact .right-contact .item-contact {
+  max-width: 628px;
+  background: rgba(255, 255, 255, 0.7);
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 60px;
+}
+#content-contact .right-contact .item-contact form .contact {
+  width: 84%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#content-contact .right-contact .item-contact form .contact h3 {
+  font-size: 36px;
+  color: #343434;
+}
+#content-contact .right-contact .item-contact form .contact p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6e6e6e;
+}
+#content-contact .right-contact .item-contact form .contact input {
+  height: 50px;
+  border-radius: 4px;
+  background: #e7eef6;
+}
+#content-contact .right-contact .item-contact form .contact textarea {
+  border-radius: 4px;
+  background: #e7eef6;
+}
+#content-contact .right-contact .item-contact form .contact button {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--bg-body);
+}
+#content-contact .right-contact .item-contact form .contact button:hover {
+  background-color: rgb(59, 59, 59);
+}
+#content-contact .list-contact {
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid rgb(204, 204, 204);
+  display: flex;
+}
+#content-contact .list-contact li {
+  list-style: none;
+  padding: 0px 40px;
+  width: 33.3333%;
+  border-right: 1px solid rgb(204, 204, 204);
+}
+#content-contact .list-contact li:first-child {
+  padding-left: 0px;
+}
+#content-contact .list-contact li:last-child {
+  padding-right: 0px;
+  border: none;
+}
+#content-contact .list-contact li h4 {
+  font-size: 18px;
+  color: var(--color-text);
+  margin-bottom: 30px;
+}
+#content-contact .list-contact li p {
+  font-size: 14px;
+  color: #808080;
+  line-height: 27px;
+}
+@media (max-width: 767px) {
+  #content-contact .list-contact {
+    display: block;
+  }
+  #content-contact .list-contact li {
+    width: 100%;
+    border: none;
+    margin-bottom: 25px;
+    padding: 0px;
+  }
 }/*# sourceMappingURL=main.css.map */
