@@ -22189,6 +22189,8 @@ button.scroll-top {
   text-align: center;
   line-height: 3;
   border-top: 1px solid var(--bg-body);
+  font-size: 18px;
+  color: #2a2a2a;
 }
 #product-list .item-product h2 a {
   font-size: 18px;
@@ -22196,6 +22198,7 @@ button.scroll-top {
 }
 #product-list .item-product h2:hover {
   background-color: rgb(15, 63, 147);
+  color: var(--bg-body);
 }
 #product-list .item-product h2:hover a {
   color: var(--bg-body);

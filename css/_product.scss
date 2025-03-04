@@ -37,12 +37,15 @@
             text-align: center; 
             line-height: 3;
             border-top: 1px solid var(--bg-body);
+            font-size: 18px;
+            color:#2a2a2a;
             a{
                 font-size: 18px;
                 color:#2a2a2a;
             }
             &:hover{
                 background-color: rgba(15, 63, 147, 1);
+                color:var(--bg-body);
                 a{
                     color:var(--bg-body);
                 } 
