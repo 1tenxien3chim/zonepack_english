@@ -22279,4 +22279,50 @@ button.scroll-top {
 
 .partner-about {
   background-color: rgb(245, 245, 245);
+}
+
+#content-contact {
+  padding: 60px 0px;
+  background-color: rgb(245, 245, 245);
+}
+#content-contact .left-contact h3 {
+  font-size: 36px;
+  color: #343434;
+}
+#content-contact .left-contact p {
+  font-size: 16px;
+  color: #808080;
+}
+#content-contact .left-contact .address-contact {
+  margin-top: 60px;
+}
+#content-contact .left-contact .address-contact li {
+  list-style: none;
+  display: flex;
+  margin-bottom: 25px;
+  align-items: center;
+}
+#content-contact .left-contact .address-contact li .icon {
+  min-width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #e2e2e2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+#content-contact .left-contact .address-contact li .icon i {
+  font-size: 30px;
+}
+#content-contact .left-contact .address-contact li .text-contact span {
+  font-size: 16px;
+  color: #808080;
+  display: block;
+  margin-bottom: 10px;
+}
+#content-contact .left-contact .address-contact li .text-contact p {
+  font-size: 18px;
+  color: #111;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
